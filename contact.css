@@ -19,30 +19,26 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url("https://www.adanirealty.com/-/media/project/realty/blogs/blogs-12-dec-24/why-mumbai-has-become-top-choice-for-real-estate-developers-whats-the-buzz.ashx");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    min-height: 100px;
+    background-color: rgb(21, 99, 167);
+    height: 100px;
 }
 
 .nav-links a {
   margin-right: 15px;
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
 .nav-links a:hover {
-    color: greenyellow;
+    color: white;
 }
 
 header h1 {
     margin: 0;    
     font-size: 2.3rem;
     text-shadow: 0 0 10px rgba(0,0,0,0.6);
-    color: #fff;
+    color: black;
 }
 .para {
     color: rgb(17, 17, 105);
@@ -133,3 +129,12 @@ button:hover {
     transform: scale(1.05);
 }
 
+#bottom {
+    background: rgb(21, 99, 167);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    width: 1476px;
+}
