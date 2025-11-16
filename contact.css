@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1600");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("https://www.adanirealty.com/-/media/project/realty/blogs/blogs-12-dec-24/why-mumbai-has-become-top-choice-for-real-estate-developers-whats-the-buzz.ashx");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 100px;
+}
+
+.nav-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: greenyellow;
+}
+
+header h1 {
+    margin: 0;    
+    font-size: 2.3rem;
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    color: #fff;
+}
+.para {
+    color: rgb(17, 17, 105);
+}
+
+h2 {
+    color: black;
+}
+
+main {
+    width: 80%;
+    max-width: 700px;
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(4px);
+    border-radius: 15px;
+    text-align: left;     
+    display: block;       
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer form {
+    width: 80%;
+    max-width: 700px;
+    margin: 30px 0;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+
+footer p {
+    margin: 5px 0 15px;
+}
+
+label {
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    background: #ffcc00;
+    color: black;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: gold;
+    transform: scale(1.05);
+}
+
