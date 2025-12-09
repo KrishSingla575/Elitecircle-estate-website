@@ -1,65 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Real Estate</title>
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <header>
-        <h1>Contact Us:-</h1>
+  <header>
+     <nav class="navbar">
+        <div>
+            <h1>☎️ Contact Us</h1>
+        </div>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="About.html">About</a>
-            <a href="Contact.html">Contact</a>
+            <a href="Contact.html" class="active">Contact</a>
+            <a href="Services.html">Services</a>
+            <button id="theme-toggle">Dark Mode 🌙</button>
         </div>
-    </header>
-    <main>
-        <h2 class="para">Contact Details:-</h2>
-        <h2>Call :</h2>
-        <p>+91 98765 43210</p>
-        <p>+91 91234 56789</p>
-        <h2>Email :</h2>
-        <p>info@elitecircleestate.com</p>
-        <p>help@elitecircleestate.com</p>
-        <h2>Address :</h2>
-        <p>EliteCircle Estate Pvt. Ltd.
-           Plot No. abc, Sapphire Business Park,
-           Sector B, Gurugram, Haryana - 122018
-           India</p>
-    </main>
-    <footer>
-        <form>
-            <h2 class="para">Get In Touch With Us</h2>
-            <p>Let’s Find Your Ideal Property Together</p>
-            <p>Our team is ready to guide you every step of the way from browsing to ownership.</p>
-            <label for="name">Full Name:</label>
-            <input id="name" name="name" type="text" placeholder="Enter your name" required>
+    </nav>
+  </header>
 
-            <label for="email">Email Address:</label>
-            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+  <div class="container">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> info@elitecircleestate.com</p>
+      <p><strong>Address:</strong> EliteCircle Estate Pvt. Ltd., Sonipat, Haryana</p>
+    </div>
 
-            <label for="phone">Phone Number:</label>
-            <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" required>
+    <form action="send_form.php" method="POST" id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" class="name" required>
+      <input type="email" name="email" placeholder="Your Email" class="email" required>
+      <input type="text" name="phone" placeholder="Your Phone" class="phone">
+      <input type="text" name="interested_in" placeholder="Interested In" class="interested_in" required>
+      <textarea name="message" placeholder="Your Message" class="message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
 
-            <label for="property">Interested In:</label>
-            <select id="property" name="property">
-                <option value="">-- Select Property Type --</option>
-                <option value="residential">Residential</option>
-                <option value="commercial">Commercial</option>
-                <option value="rental">Rental</option>
-                <option value="land">Land & Plots</option>
-                <option value="luxury">Luxury Estate</option>
-            </select>
+    <div class="map">
+      <h2>Find Us Here</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.123456789!2d77.012345!3d28.987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d123456789abc%3A0xabcdef123456789!2sSonipat%2C%20Haryana!5e0!3m2!1sen!2sin!4v1700000000000"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" type="text" name="message" placeholder="Write your message here..." rows="4"></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
-    </footer>
-
-    <p id="bottom">&copy; 2025 Elite Circle Estate Company. All Rights Reserved.</p>
+<footer>
+    <p>&copy; 2025 Elite Circle Estate Company. All Rights Reserved.<br>
+    Feel free to contact us in case of any queries:- <br>
+    +91 98765 43210 , +91 91234 56789</p>
+</footer>
 </body>
+<script src="script.js"></script>
 </html>
